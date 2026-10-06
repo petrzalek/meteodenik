@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             MeteoDenikTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Petr",
+                        name = "Petr Zalek",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
