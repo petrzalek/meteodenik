@@ -3,4 +3,12 @@
     <string name="uvodni_text">Meteo deník — Petr Žalek</string>
     <string name="text_po_kliknuti">Dnes bylo 14 °C a jasno.</string>
     <string name="akce_zmen_text">Zapsat dnešní počasí</string>
+    <string name="title_activity_detail_mesta">DetailMestaActivity</string>
+    <string name="otevri_detail">Otevřít detail</string>
+    <string name="mesto_nezname">Neznámé město</string>
+    <string name="sdilet_zaznam">Sdílet záznam</string>
+    <string name="sdileny_text">%1$s: %2$.1f °C — zapsáno v MeteoDeníku</string>
+    <string name="teplota_format">%1$.1f °C</string>
+    <string name="teplota_chybi">Teplota není k dispozici</string>
+    <string name="poslat_zpravu">Zapsat záznam</string>
 </resources>
