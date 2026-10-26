@@ -1,42 +1,10 @@
-|
-data class Zapis(val mesto: String, val teplota: Double, val poznamka: String = "")
-|
-getMesto(): String, getTeplota(): double, getPoznamka(): String, component1(): String, component2(): double, component3(): String, copy(String, double, String): Zapis, equals(Object): boolean, hashCode(): int, toString(): String
-|
-cca 40–60 řádků
-|
-
-|
-object Prevody
-|
-public static final Prevody INSTANCE; privátní konstruktor Prevody()
-|
-cca 5–10 řádků
-|
-
-|
-const val ABSOLUTNI_NULA = -273.15
-|
-public static final double ABSOLUTNI_NULA	
-|
-cca 1–2 řádků
-|
-
-|
-fun Double.zaokrouhlenoNaDesetiny(): Double	
-|
-public static final double zaokrouhlenoNaDesetiny(double)
-|
-cca 3–5 řádků
-|
-
-|
-suspend fun nactiPoZdrzeni(zapisy: List<Zapis>): List<Zapis>
-|
-public static final Object nactiPoZdrzeni(List zapisy, Continuation $completion)
-|
-cca 15–30 řádků
-|
+| Kotlin zápis | Java pohled (JVM) | Odhad velikosti dekompilovaného kódu |
+|---|---|---|
+| `data class Zapis(val mesto: String, val teplota: Double, val poznamka: String = "")` | `getMesto(): String`, `getTeplota(): double`, `getPoznamka(): String`, `component1(): String`, `component2(): double`, `component3(): String`, `copy(String, double, String): Zapis`, `equals(Object): boolean`, `hashCode(): int`, `toString(): String` | cca 40–60 řádků |
+| `object Prevody` | `public static final Prevody INSTANCE;` privátní konstruktor `Prevody()` | cca 5–10 řádků |
+| `const val ABSOLUTNI_NULA = -273.15` | `public static final double ABSOLUTNI_NULA` | cca 1–2 řádky |
+| `fun Double.zaokrouhlenoNaDesetiny(): Double` | `public static final double zaokrouhlenoNaDesetiny(double)` | cca 3–5 řádků |
+| `suspend fun nactiPoZdrzeni(zapisy: List<Zapis>): List<Zapis>` | `public static final Object nactiPoZdrzeni(List zapisy, Continuation $completion)` | cca 15–30 řádků |
 
 1. Kolik metod má dekompilovaná třída Zapis a které nemají v Kotlinu přímý zápis?
 
