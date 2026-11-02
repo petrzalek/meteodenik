@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather Diary</string>
+    <string name="uvodni_text">Weather Diary — Petr Žalek</string>
+    <string name="text_po_kliknuti">It was 14 °C and sunny today.</string>
+    <string name="akce_zmen_text">Record today\'s weather</string>
+    <string name="title_activity_detail_mesta">CityDetailActivity</string>
+    <string name="otevri_detail">Open details</string>
+    <string name="mesto_nezname">Unknown city</string>
+    <string name="sdilet_zaznam">Share entry</string>
+    <string name="sdileny_text">%1$s: %2$.1f °C — recorded in Weather Diary</string>
+    <string name="detail_souhrn">%1$s currently has %2$.1f °C</string>
+    <string name="teplota_format">%1$.1f °C</string>
+    <string name="teplota_chybi">Temperature is not available</string>
+    <string name="poslat_zpravu">Add record</string>
+    <string name="poloha_povolena">Location permission granted</string>
+    <string name="poloha_bez_opravneni">Location permission denied…</string>
+    <string name="otevrit_nastaveni">Open settings</string>
+    <string name="poloha_pokracovat">Continue</string>
+    <string name="poloha_zjistit">Find my location</string>
+    <string name="poloha_souradnice">Latitude: %1$.5f, longitude: %2$.5f</string>
+    <string name="poloha_nedostupna">Location permission is granted, but coordinates are not currently available.</string>
+    <string name="poloha_vysvetleni">Your approximate location lets us show weather for the city you are currently in, without requiring you to search for it manually. Your location is used only to determine your approximate area.</string>
+    <string name="seznam_titulek_pocet">My cities — %1$s</string>
+    <plurals name="pocet_zaznamu">
+        <item quantity="one">%1$d record</item>
+        <item quantity="other">%1$d records</item>
+    </plurals>
+    <string-array name="jednotky_teploty">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+</resources>

@@ -1,0 +1,10 @@
+# Lekce 05 – tabulka životního cyklu
+
+| Scénář | Můj předpoklad | Skutečnost z Logcatu | Proč se to liší |
+|---|---|---|---|
+| 1. Start aplikace z ikony | onCreate -> onStart -> onResume | onCreate (savedInstanceState = null) -> onStart -> onResume | Jde o vytvoření nové instance aktivity při prvním spuštění, proto je savedInstanceState null. |
+| 2. Rotace displeje | onPause -> onStop -> onDestroy (isFinishing = false) -> onCreate -> onStart -> onResume; savedInstanceState očekávám nenull | onPause -> onStop -> onDestroy (isFinishing = false) -> onCreate (savedInstanceState = nenull) -> onStart -> onResume | Rotace mění konfiguraci zařízení, takže Android zruší starou instanci a vytvoří novou. isFinishing = false znamená, že aktivita nebyla ukončena běžným způsobem. Android předal nové instanci uložený stav. |
+| 3. Stisk Home | onPause -> onStop | onPause -> onStop | Stisk Home přesune aplikaci do pozadí. Aktivita přestane být viditelná, ale její instance může zůstat zachovaná, takže není nutné volat onDestroy. |
+| 4. Návrat do aplikace | onRestart -> onStart -> onResume | onRestart -> onStart -> onResume | Android zachoval původní instanci MainActivity na pozadí. Při návratu ji znovu spustil bez vytváření nové instance, proto se onCreate nevolal. |
+| 5. Stisk Zpět na MainActivity | onPause -> onStop -> onDestroy (isFinishing = true) | onPause -> onStop; onDestroy se v Logcatu neobjevil | Předpokládané ukončení aktivity nebylo ve výpisu potvrzeno. |
+| 6. adb shell am kill na pozadí + návrat | Při ukončení procesu neočekávám onDestroy; při návratu očekávám onCreate -> onStart -> onResume; savedInstanceState může být nenull | Před ukončením: onPause -> onStop; PROCESS ENDED; onDestroy se neobjevil. Po návratu: onCreate (savedInstanceState = Bundle, nenull) -> onStart -> onResume | Android ukončil proces aplikace na pozadí bez zavolání onDestroy. Při návratu vytvořil novou instanci aktivity a předal jí uložený stav ve formě Bundle. |
