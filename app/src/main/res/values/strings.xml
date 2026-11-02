@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MeteoDenik</string>
     <string name="uvodni_text">Meteo deník — Petr Žalek</string>
@@ -8,20 +9,23 @@
     <string name="mesto_nezname">Neznámé město</string>
     <string name="sdilet_zaznam">Sdílet záznam</string>
     <string name="sdileny_text">%1$s: %2$.1f °C — zapsáno v MeteoDeníku</string>
+    <string name="detail_souhrn">%1$s má právě %2$.1f °C</string>
     <string name="teplota_format">%1$.1f °C</string>
     <string name="teplota_chybi">Teplota není k dispozici</string>
     <string name="poslat_zpravu">Zapsat záznam</string>
     <string name="poloha_povolena">Poloha je povolena</string>
     <string name="poloha_bez_opravneni">Bez oprávnění k poloze…</string>
     <string name="otevrit_nastaveni">Otevřít nastavení</string>
-    <string name="poloha_vysvetleni">Přibližnou polohu potřebujeme, abychom vám nabídli počasí ve městě, kde právě jste.</string>
     <string name="poloha_pokracovat">Pokračovat</string>
-    <string name="poloha_zjistit">Zjistit polohu</string>
+    <string name="poloha_zjistit">Zjistit moji polohu</string>
+    <string name="poloha_souradnice">Zeměpisná šířka: %1$.5f, délka: %2$.5f</string>
+    <string name="poloha_nedostupna">Poloha je povolena, ale aktuální souřadnice zatím nejsou dostupné.</string>
+    <string name="poloha_vysvetleni">Díky přibližné poloze vám můžeme zobrazit počasí pro město, ve kterém se právě nacházíte, bez nutnosti město ručně vyhledávat. Poloha se používá pouze k určení přibližné oblasti.</string>
     <string name="seznam_titulek_pocet">Moje města — %1$s</string>
     <plurals name="pocet_zaznamu">
         <item quantity="one">%1$d záznam</item>
         <item quantity="few">%1$d záznamy</item>
-        <item quantity="many">%1$d záznamu</item>
+        <item quantity="many">%1$d záznamů</item>
         <item quantity="other">%1$d záznamů</item>
     </plurals>
     <string-array name="jednotky_teploty">

@@ -22,14 +22,22 @@ private const val TAG = "Cyklus"
 fun DetailObrazovka(mesto: String, teplota: Double) {
     Scaffold { insety ->
         Column(modifier = Modifier.padding(insety).padding(16.dp)) {
-            Text(text = mesto, style = MaterialTheme.typography.headlineMedium)
             Text(
                 text = if (teplota.isNaN()) {
-                    stringResource(R.string.teplota_chybi)
+                    stringResource(R.string.mesto_nezname)
                 } else {
-                    stringResource(R.string.teplota_format, teplota)
-                }
+                    stringResource(
+                        R.string.detail_souhrn,
+                        mesto,
+                        teplota
+                    )
+                },
+                style = MaterialTheme.typography.headlineMedium
             )
+
+            if (teplota.isNaN()) {
+                Text(stringResource(R.string.teplota_chybi))
+            }
 
             SdiletTlacitko(mesto = mesto, teplota = teplota)
         }

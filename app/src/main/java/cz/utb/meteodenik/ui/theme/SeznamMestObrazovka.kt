@@ -47,6 +47,8 @@ fun SeznamMestObrazovka() {
                 style = MaterialTheme.typography.headlineSmall
             )
 
+            PolohaKarta(onPolohaPovolena = {})
+
             UKAZKOVA_MESTA.forEach { mesto ->
                 Column(
                     modifier = Modifier
@@ -80,8 +82,6 @@ fun SeznamMestObrazovka() {
                 }
             }
 
-            PolohaKarta(onPolohaPovolena = {})
-
             Button(
                 onClick = {
                     context.sendBroadcast(
@@ -102,3 +102,4 @@ fun SeznamMestObrazovka() {
         }
     }
 }
+
