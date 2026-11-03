@@ -7,6 +7,13 @@
     <string name="title_activity_detail_mesta">CityDetailActivity</string>
     <string name="otevri_detail">Open details</string>
     <string name="mesto_nezname">Unknown city</string>
+    <string name="mesta_titulek">My cities</string>
+    <string name="mesta_prazdno">No cities yet. Add the first one.</string>
+    <string name="mesto_pole_label">City name</string>
+    <string name="mesto_pridat">Add</string>
+    <string name="mesto_teplota">%1$.1f °C</string>
+    <string name="mesto_teplota_neznama">Temperature not known yet</string>
+    <string name="mesto_avatar_popis">City badge</string>
     <string name="sdilet_zaznam">Share entry</string>
     <string name="sdileny_text">%1$s: %2$.1f °C — recorded in Weather Diary</string>
     <string name="detail_souhrn">%1$s currently has %2$.1f °C</string>
