@@ -41,4 +41,12 @@
         <item>Celsius</item>
         <item>Fahrenheit</item>
     </string-array>
+    <string name="mesto_duplikat">Toto město už v seznamu existuje.</string>
+    <string name="mesto_smazat_popis">Smazat město %1$s</string>
+    <string name="mesto_smazat">Smazat</string>
+    <plurals name="mesta_pocet">
+        <item quantity="one">%1$d město</item>
+        <item quantity="few">%1$d města</item>
+        <item quantity="other">%1$d měst</item>
+    </plurals>
 </resources>

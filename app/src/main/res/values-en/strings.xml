@@ -39,4 +39,11 @@
         <item>Celsius</item>
         <item>Fahrenheit</item>
     </string-array>
+    <string name="mesto_duplikat">This city already exists.</string>
+    <string name="mesto_smazat_popis">Delete city %1$s</string>
+    <string name="mesto_smazat">Delete</string>
+    <plurals name="mesta_pocet">
+        <item quantity="one">%1$d city</item>
+        <item quantity="other">%1$d cities</item>
+    </plurals>
 </resources>
