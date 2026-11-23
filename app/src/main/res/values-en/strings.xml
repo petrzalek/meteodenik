@@ -31,6 +31,7 @@
     <string name="vizitka_email_popis">E-mail address</string>
     <string name="vizitka_avatar_popis">Avatar of %1$s</string>
     <string name="mesto_teplota_poznamka">We will add temperature in lesson 11</string>
+    <string name="zpet">Back</string>
     <string name="seznam_titulek_pocet">My cities — %1$s</string>
     <plurals name="pocet_zaznamu">
         <item quantity="one">%1$d record</item>

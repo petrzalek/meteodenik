@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)   // NOVÉ – generuje kód pro @Serializable
 }
 
 android {
@@ -59,4 +60,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.navigation.compose)              // NavHost, NavController
+    implementation(libs.androidx.lifecycle.viewmodel.compose)     // funkce viewModel()
+    implementation(libs.androidx.lifecycle.runtime.compose)       // collectAsStateWithLifecycle()
 }
