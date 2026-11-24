@@ -33,6 +33,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -63,4 +64,10 @@ dependencies {
     implementation(libs.androidx.navigation.compose)              // NavHost, NavController
     implementation(libs.androidx.lifecycle.viewmodel.compose)     // funkce viewModel()
     implementation(libs.androidx.lifecycle.runtime.compose)       // collectAsStateWithLifecycle()
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.kotlinx.serialization)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(platform(libs.okhttp.bom))     // platform(), ne obyčejná závislost!
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging.interceptor)
 }

@@ -18,7 +18,7 @@
     <string name="sdileny_text">%1$s: %2$.1f °C — zapsáno v MeteoDeníku</string>
     <string name="detail_souhrn">%1$s má právě %2$.1f °C</string>
     <string name="teplota_format">%1$.1f °C</string>
-    <string name="teplota_chybi">Teplota není k dispozici</string>
+    <string name="teplota_chybi">—</string>
     <string name="poslat_zpravu">Zapsat záznam</string>
     <string name="poloha_povolena">Poloha je povolena</string>
     <string name="poloha_bez_opravneni">Bez oprávnění k poloze…</string>
@@ -32,6 +32,15 @@
     <string name="vizitka_avatar_popis">Avatar osoby %1$s</string>
     <string name="mesto_teplota_poznamka">Teplotu doplníme v lekci 11</string>
     <string name="zpet">Zpět</string>
+    <string name="chyba_bez_pripojeni">Nejste připojeni k internetu. Zkontrolujte Wi-Fi nebo mobilní data.</string>
+    <string name="chyba_server_neodpovida">Server neodpovídá. Zkuste to prosím za chvíli.</string>
+    <string name="chyba_prilis_mnoho_dotazu">Dosáhli jste limitu dotazů. Zkuste to za minutu.</string>
+    <string name="chyba_pozadavku">Data se nepovedlo načíst. Zkuste město odebrat a přidat znovu.</string>
+    <string name="chyba_serveru">Na straně poskytovatele dat je porucha. Zkuste to později.</string>
+    <string name="chyba_neplatna_odpoved">Server poslal neočekávanou odpověď. Pokud jste na veřejné Wi-Fi, přihlaste se do ní.</string>
+    <string name="chyba_jina_site">Spojení se nepovedlo dokončit.</string>
+    <string name="akce_zkusit_znovu">Zkusit znovu</string>
+    <string name="akce_obnovit">Obnovit</string>
     <string name="seznam_titulek_pocet">Moje města — %1$s</string>
     <plurals name="pocet_zaznamu">
         <item quantity="one">%1$d záznam</item>
